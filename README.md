@@ -7,17 +7,7 @@
 - カップ数（アルファベット表記。Zを超える場合は「4Z」のようにZから何段階上かを表記）
 - トップバスト (cm)
 
-計算式は [Wikipedia: Bra size – Manufacturer design standards](https://en.wikipedia.org/wiki/Bra_size#Manufacturer_design_standards) を参考にした Excel シートのロジックをそのまま移植しています（`script.js` 内のコメント参照）。
-
-## 使い方
-
-ビルド不要の素の HTML / CSS / JS のみで構成されています。`index.html` をブラウザで開くだけで動作します。
-
-## GitHub Pages で公開する場合
-
-1. このフォルダの中身をリポジトリのルート（または `/docs`）にアップロード
-2. リポジトリの Settings → Pages で公開ブランチ／フォルダを指定
-3. 数分後に公開URLが発行されます
+計算式は [Wikipedia: Bra size – Manufacturer design standards](https://en.wikipedia.org/wiki/Bra_size#Manufacturer_design_standards) を参考にしました）。
 
 ## ファイル構成
 
