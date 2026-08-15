@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>バストカップ計算機</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>バストカップ計算機</h1>
+    <p class="lead">質量とアンダーバストから、体積・曲率半径・カップ数・トップバストを算出します。</p>
+
+    <form id="calc-form">
+      <div class="field">
+        <label for="mass">質量 (kg)</label>
+        <input type="number" id="mass" name="mass" step="0.01" min="0" placeholder="例: 0.4" required>
+      </div>
+
+      <div class="field">
+        <label for="underbust">アンダーバスト (cm)</label>
+        <input type="number" id="underbust" name="underbust" step="5" min="0" placeholder="例: 70" required>
+      </div>
+
+      <button type="submit">計算する</button>
+    </form>
+
+    <section id="result" class="result" hidden>
+      <div class="result-row">
+        <span class="result-label">片胸の体積</span>
+        <span class="result-value" id="out-volume">–</span>
+        <span class="result-unit">cm³</span>
+      </div>
+      <div class="result-row">
+        <span class="result-label">曲率半径 D</span>
+        <span class="result-value" id="out-radius">–</span>
+        <span class="result-unit">cm</span>
+      </div>
+      <div class="result-row">
+        <span class="result-label">カップ</span>
+        <span class="result-value" id="out-cup">–</span>
+        <span class="result-unit"></span>
+      </div>
+      <div class="result-row">
+        <span class="result-label">トップバスト</span>
+        <span class="result-value" id="out-top">–</span>
+        <span class="result-unit">cm</span>
+      </div>
+    </section>
+
+    <p id="error" class="error" hidden></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
